@@ -24,6 +24,9 @@ function PrivateRoute({ element, ...rest }) {
 }
 
 function App() {
+  
+
+
   return (
     < AuthProvider>
       <Router>  
