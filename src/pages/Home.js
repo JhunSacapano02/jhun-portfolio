@@ -7,6 +7,9 @@ import { getDocs, collection} from 'firebase/firestore';
 import { useNavigate, useParams} from 'react-router-dom';
 import Hero from './Hero';
 import About from './About';
+import Experience from './Experience';
+import Projects from './Projects';
+import Contact from './Contact';
 
 
 export default function Home(){
@@ -19,6 +22,15 @@ export default function Home(){
         </Container>
         <Container fluid className='section'>
             <About />
+        </Container>
+        <Container fluid className='section'>
+            <Experience />
+        </Container>
+        <Container fluid className='section'>
+            <Projects />
+        </Container>
+        <Container fluid className='section'>
+            <Contact />
         </Container>
         </>
     )

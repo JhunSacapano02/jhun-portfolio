@@ -17,7 +17,7 @@ export default function Home(){
           const dataCollection = data.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
           const sortedData = dataCollection.sort((a, b) => new Date(b.issue) - new Date(a.issue));
 
-          setCertificateList(dataCollection);
+          setCertificateList(sortedData);
           console.log(dataCollection);
         } catch (err) {
           console.log(err);
@@ -43,7 +43,7 @@ export default function Home(){
                         <Col className='intro' lg={10}>
                           <Row className='justify-content-between align-items-center'>
                             <Col className='col-4'>
-                              <p className='sub-title mt-5 text-start'>Mabuhay! this is <strong>Jhun Anthony Sacapaño</strong>.<br></br>I <strong>Innovate</strong>, <strong>Code</strong>, <strong>Repeat</strong>.</p>
+                              <p className='sub-title mt-5 text-start'>Hi! I'm <strong>Jhun Anthony Sacapaño</strong>.<br></br>I <strong>Empathize</strong>, <strong>Innovate</strong>, <strong>Assess</strong>, & <strong>Repeat</strong>.</p>
                               </Col>
                               <Col className='col-4'>
                               <p className='sub-title mt-5 text-end'>A <strong>Software Engineer</strong> specializing in creating experiences through code and beyond.</p>

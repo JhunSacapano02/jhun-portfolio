@@ -13,10 +13,11 @@ export default function AppNavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link className='ms-lg-3 navlink' as={NavLink} to="/" exact="true">About</Nav.Link>
-            <Nav.Link className='ms-lg-3 navlink' as={NavLink} to="/works" exact="true">Experience</Nav.Link>
-            <Nav.Link className='ms-lg-3 navlink' as={NavLink} to="/contact" exact="true">Works</Nav.Link>
-            <Nav.Link className='ms-lg-3 navlink' as={NavLink} to="/details" exact="true">Contact</Nav.Link>
+            <Nav.Link className='ms-lg-3 navlink' as={NavLink} to="/" exact="true">Home</Nav.Link>
+            <Nav.Link className='ms-lg-3 navlink' as={NavLink} to="/about" exact="true">About</Nav.Link>
+            <Nav.Link className='ms-lg-3 navlink' as={NavLink} to="/experience" exact="true">Experience</Nav.Link>
+            <Nav.Link className='ms-lg-3 navlink' as={NavLink} to="/projects" exact="true">Projects</Nav.Link>
+            <Nav.Link className='ms-lg-3 navlink' as={NavLink} to="/contact" exact="true">Contact</Nav.Link>
             <Nav.Link className='ms-lg-3 navlink' as={NavLink} to="/resume" exact="true">Resume</Nav.Link>
  
           </Nav>

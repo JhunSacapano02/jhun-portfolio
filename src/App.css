@@ -11,6 +11,10 @@ body {
   background-color: #fbfbfb;
 }
 
+.background{
+  background-color: #2B2B2B !important;
+}
+
 .strong-black{
   color: #2B2B2B;
 }
@@ -31,7 +35,7 @@ p{
 }
 
 .big-title {
-  font-size: 70px !important;
+  font-size: 48px !important;
   font-weight: 700 !important;
   color: #fbfbfb;
   font-family: 'Geologica', sans-serif;
@@ -49,7 +53,13 @@ p{
   font-size: 28px !important;
   font-weight: 700;
   color: #2B2B2B;
-  
+}
+
+.title-w {
+  font-family: 'Oswald', sans-serif !important;
+  font-size: 28px !important;
+  font-weight: 700;
+  color: #fbfbfb;
 }
 
 
@@ -322,22 +332,19 @@ p{
 }
 
 .imgBox img {
-
-  max-height: 130px;
+  max-height: 120px;
   scale: 0.8;
   border-radius: 5px !important;
 }
 
 .imgBox img:hover {
   -webkit-transform: scale(1.1);
--ms-transform: scale(1.1);
-transform: scale(1.1);
-transition: 1s ease;
-transform-origin: top top;
-  /* border: 0.1px solid #E1E1E1 !important; */
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1s ease;
+  transform-origin: top top;
   box-shadow: 0px 2px 4px -3px rgba(0, 0, 0, 0.1) !important;
 }
-
 
 
 
@@ -422,6 +429,11 @@ transform-origin: top top;
   width: 3px !important;
 } 
 
+.vr-icon{
+  left: -10px !important;
+}
+
+
 .container-for-vertical{
   position: relative !important;
   height: 100% !important;
@@ -433,28 +445,13 @@ transform-origin: top top;
   height: 100% !important;
 }
 
-.vr-icon{
-  /* position: absolute !important;  */
-  /* top:-20% !important;  */
-  left: -10px !important;
-  /* z-index: 99; */
+.vertical-container-icon{
+  position: absolute !important; 
+  bottom: 0 !important; 
+  height: 100% !important;
+  left: 20px;
 }
 
-/* .vertical-center-line{
-  position: absolute !important;
-  top: 50% !important;
-  transform: translateY(-50%);
-}  */
-
-/* .vertical-container{
-  height: 100% !important;
-}
-
-.vr {
-  background: linear-gradient(to bottom, #2B2B2B, #fbfbfb);  
-  width: 3px !important;
-  height: 100% !important;
-} */
 
 .icon {
   height: 24px;
@@ -474,4 +471,42 @@ transform-origin: top top;
 /* Footer */
 .page-footer{
   background-color: #fbfbfb !important;
+}
+
+.project-img{
+  border: 2px solid #fbfbfb; 
+  border-radius: 10px;
+  width: 90%;
+  height: auto;
+  box-shadow: 0 0 10px #fbfbfb; 
+}
+
+.project-img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1s ease;
+  transform-origin: top top;
+  box-shadow: 0px 2px 4px -3px rgba(0, 0, 0, 0.1) !important;
+}
+
+.tool-logo {
+  width: 35px;
+  height: 35px;
+}
+
+.black-button {
+  background: linear-gradient(90deg, #2B2B2B, #303030) !important;
+  color: aliceblue !important;
+  border: none !important;
+  border-radius: 10px !important;
+  border: 2px aliceblue solid !important;
+  transition: background-color 0.3s ease, color 0.3s ease !important;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.black-button:hover {
+  background: linear-gradient(90deg, white, aliceblue) !important;
+  color: #2B2B2B !important;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }

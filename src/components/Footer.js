@@ -1,7 +1,7 @@
 import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faMobile, faAt } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faLinkedin, faGithub, faBehance } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Container, Row, Col} from 'react-bootstrap';
 
 
@@ -12,18 +12,16 @@ export default function Footer() {
       <section className='d-flex justify-content-center p-4 border-bottom'>
         <div>
           
-          <a href='' className='me-4 text-reset'>
+          <a href='https://www.linkedin.com/in/jhun-sacapano' target="blank" className='me-4 text-reset'>
             <FontAwesomeIcon icon={faLinkedin} size="lg"/>
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://www.facebook.com/jhunsacapano02/' target="blank" className='me-4 text-reset'>
             <FontAwesomeIcon icon={faFacebook} size="lg"/>
           </a>
-          <a href='' className='me-4 text-reset'  >
+          <a href='https://github.com/JhunSacapano02' target="blank" className='me-4 text-reset'  >
             <FontAwesomeIcon icon={faGithub} size="lg"/>
           </a>
-          <a href='' className='me-4 text-reset'>
-            <FontAwesomeIcon icon={faBehance}  size="lg"/>
-          </a> 
+
         </div>
       </section>
 
@@ -35,7 +33,7 @@ export default function Footer() {
                 Jhun Anthony I. Sacapaño
               </h6>
               <p>
-                Designed in Figma and coded in Visual Studio Code. This portfolio is built with <strong>React js</strong> framework with <strong>Bootstrap</strong> plugin, and integrated with <strong>Firebase Cloud Services</strong>.             </p>
+                Designed in Figma and coded in <strong>Visual Studio Code</strong>. This portfolio is built with <strong>React js</strong> framework with <strong>Bootstrap</strong> plugin, and integrated with <strong>Firebase Cloud Services</strong>.             </p>
             </Col>
 
             <Col md={4} lg={3} xl={3} className='mx-auto mb-md-0 mb-4'>
