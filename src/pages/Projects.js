@@ -154,7 +154,7 @@ export default function Projects() {
                                 </Col>
                               <Col className='col-11 ps-md-2 ps-lg-5'>
                               {projects.map((project , index) => (
-                              <Row key={project.docId} className='justify-content-center align-items-top py-4 my-4'>
+                              <Row key={project.docId} className='justify-content-center align-items-top pb-4 mb-4'>
                                 <Col className="col-12 col-md-6">
                                     <Image className='project-img my-4 my-sm-4 my-lg-0' key={project.docId} src={project.image} alt="certificate" />
                                 </Col>

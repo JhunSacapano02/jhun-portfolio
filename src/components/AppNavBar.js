@@ -18,8 +18,10 @@ export default function AppNavBar() {
             <Nav.Link className='ms-lg-3 navlink' as={NavLink} to="/experience" exact="true">Experience</Nav.Link>
             <Nav.Link className='ms-lg-3 navlink' as={NavLink} to="/projects" exact="true">Projects</Nav.Link>
             <Nav.Link className='ms-lg-3 navlink' as={NavLink} to="/contact" exact="true">Contact</Nav.Link>
-            <Nav.Link className='ms-lg-3 navlink' as={NavLink} to="/resume" exact="true">Resume</Nav.Link>
- 
+            <Nav.Link className='ms-lg-3 navlink' href="https://drive.google.com/file/d/1BicSl5cbsti8ziyfPhESkKT52NZB0ds4/view?usp=drive_link" 
+            target="_blank" rel="noopener noreferrer">
+              Resume
+            </Nav.Link> 
           </Nav>
         </Navbar.Collapse>
       </Container>

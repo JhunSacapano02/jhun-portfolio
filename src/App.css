@@ -41,6 +41,12 @@ p{
   font-family: 'Geologica', sans-serif;
 }
 
+@media only screen and (max-width: 575px) {
+  .big-title {
+    font-size: 38px !important;
+  }
+}
+
 .white-p{
   font-family: 'Geologica', sans-serif;
   color: #fbfbfb;
@@ -61,6 +67,8 @@ p{
   font-weight: 700;
   color: #fbfbfb;
 }
+
+
 
 
 .sub-title {
