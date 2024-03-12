@@ -390,6 +390,8 @@ p{
   color: #2B2B2B !important;
   font-weight: 400 !important;
   text-shadow: none !important;
+  text-decoration: none;
+  align-self: center; 
 }
 
 .navlink:hover{

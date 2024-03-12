@@ -89,9 +89,9 @@ export default function About() {
                         <Col className='col-12'>
                           <Container className="container-for-vertical">
 
-                                <Row className='justify-content-center align-items-center'>
+                                <Row className='justify-content-start align-items-center'>
                                 <Col className='col-1'>
-                                    <div class="vertical-container d-flex flex-column align-items-center justify-content-center">
+                                    <div class="vertical-container d-none d-sm-none d-md-flex flex-column align-items-center justify-content-center">
                                       <FontAwesomeIcon icon={faInfoCircle} className="icon vr-icon align-self-center" inverse />
                                     </div>                              
                                   </Col>
@@ -108,13 +108,13 @@ export default function About() {
                     <Row>
                         <Col className='col-12'>
                         <Container className="container-for-vertical">
-                        <Row className='justify-content-center align-items-center'>
+                        <Row className='justify-content-start align-items-center'>
                                 <Col className='col-1'>
-                                  <div class="vertical-container-icon d-flex flex-column align-items-center justify-content-center">
+                                  <div class="vertical-container-icon d-none d-sm-none d-md-flex flex-column align-items-center justify-content-center">
                                     <div class="vr align-self-center"></div>
                                   </div>                             
                                 </Col>
-                              <Col className='col-11 ps-md-2 ps-lg-5'>
+                              <Col className='col-10 col-md-11 ps-md-2 ps-lg-5'>
                                 <p className='white-p'>
                                     Mabuhay! My name is <strong>Jhun Anthony I. Sacapaño</strong>, a Philippine-based <strong>Software Engineer</strong> who resides in a tropical island. Back in 2018, I earned a Bachelors of Science in <strong>Information Technology</strong> specializing in <strong>Software Engineering</strong>. Graduated in 2022 with latin honor, I am also awarded as <strong>Best in Software Project</strong> showcasing a <strong>Tour Planner App for Sustainable Tourism</strong>. 
                                 </p>

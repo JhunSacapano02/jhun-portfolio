@@ -1,10 +1,4 @@
-import { Popover, Form, Button, InputGroup, Row, Col, Image, Container, Card, Pagination, Section  } from 'react-bootstrap';
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import { useState, useEffect } from 'react';
-import profile from'../assets/images/profile.png';
-import { db } from '../config/firebase'
-import { getDocs, collection} from 'firebase/firestore';
-import { useNavigate, useParams} from 'react-router-dom';
+import { Container } from 'react-bootstrap';
 import Hero from './Hero';
 import About from './About';
 import Experience from './Experience';
@@ -17,19 +11,19 @@ export default function Home(){
 
     return (
         <>
-        <Container fluid className='hero-section'>
+        <Container fluid className='hero-section' id='hero'>
             <Hero />
         </Container>
-        <Container fluid className='section'>
+        <Container fluid className='section' id='about'>
             <About />
         </Container>
-        <Container fluid className='section'>
+        <Container fluid className='section' id='experience'>
             <Experience />
         </Container>
-        <Container fluid className='section'>
+        <Container fluid className='section' id='projects'>
             <Projects />
         </Container>
-        <Container fluid className='section'>
+        <Container fluid className='section' id='contact'>
             <Contact />
         </Container>
         </>

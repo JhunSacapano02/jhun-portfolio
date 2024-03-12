@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Card, Image, OverlayTrigger, Popover, Collapse } from 'react-bootstrap';
+import { Container, Row, Col, Image, Collapse } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faProjectDiagram, faSquareArrowUpRight } from '@fortawesome/free-solid-svg-icons';
@@ -127,9 +127,9 @@ export default function Projects() {
                         <Col className='col-12'>
                           <Container className="container-for-vertical">
 
-                                <Row className='justify-content-center align-items-center'>
+                                <Row className='justify-content-start align-items-center'>
                                 <Col className='col-1'>
-                                    <div class="vertical-container d-flex flex-column align-items-center justify-content-center">
+                                    <div class="vertical-container d-none d-sm-none d-md-flex flex-column align-items-center justify-content-center">
                                       <FontAwesomeIcon icon={faProjectDiagram} className="icon vr-icon align-self-center" inverse />
                                     </div>                              
                                   </Col>
@@ -146,26 +146,26 @@ export default function Projects() {
                     <Row>
                         <Col className='col-12'>
                         <Container className="container-for-vertical">
-                        <Row className='justify-content-center align-items-center'>
+                        <Row className='justify-content-start align-items-center'>
                               <Col className='col-1'>
-                                  <div class="vertical-container-icon d-flex flex-column align-items-center justify-content-center">
+                                  <div class="vertical-container-icon d-none d-sm-none d-md-flex flex-column align-items-center justify-content-center">
                                     <div class="vr align-self-center"></div>
                                   </div>                             
                                 </Col>
-                              <Col className='col-11 ps-md-2 ps-lg-5'>
+                              <Col className='col-10 col-md-11 ps-md-2 ps-lg-5'>
                               {projects.map((project , index) => (
                               <Row key={project.docId} className='justify-content-center align-items-top pb-4 mb-4'>
                                 <Col className="col-12 col-md-6">
-                                    <Image className='project-img my-4 my-sm-4 my-lg-0' key={project.docId} src={project.image} alt="certificate" />
+                                    <Image className='project-img my-4 my-sm-4 my-lg-0 w-100' key={project.docId} src={project.image} alt="certificate" />
                                 </Col>
                                 
                                 <Col className="col-12 col-md-6 white-p d-flex flex-column flex-md-row">
                                     <div onClick={() => handleDivClick(index)} className='w-100'>
-                                      <Row className='justify-content-start align-items-start'>
-                                        <Col className='col-9 col-md-11'>
+                                      <Row className='justify-content-start align-items-center'>
+                                        <Col className='col-10'>
                                         <strong className='title-w text-uppercase my-0'>{project.title}</strong>
                                         </Col>
-                                        <Col className='col-3 col-md-1'>
+                                        <Col className='col-1'>
                                         <a href={project.website} target="_blank" rel="noopener noreferrer" className="icon-link">
                                         <FontAwesomeIcon icon={faSquareArrowUpRight} className="icon" size='small' inverse/>
                                         </a>
@@ -180,8 +180,10 @@ export default function Projects() {
                                       <hr></hr>
                                       
                                       {project.description}
+                                      
                                       <Collapse in={index === openCollapse}>
                                         <div>
+                                        <br></br>
                                           {project.summary}
                                         </div>
                                       </Collapse>
